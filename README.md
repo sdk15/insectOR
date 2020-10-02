@@ -1,6 +1,6 @@
 InsectOR package
 ================
-Authors: Snehal Dilip Karpe and Vikas Tiwari
+*Authors: Snehal Dilip Karpe and Vikas Tiwari*
 
 
 This package helps to annotate genes coding for any specific family of proteins from a medium sized genome (currently tested on insect olfactory receptors / ORs). 
@@ -14,7 +14,7 @@ This package is under development.
 
 Operating system requirements:
 ------------------------------
-This package is made using and for use on unix systems.
+This package is for use on unix systems.
 
 
 Installation:
