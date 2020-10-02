@@ -46,9 +46,9 @@ Please follow these instructions for installing and using this package -
 
 3) Install following packages and keep their respective folders/binaries inside "insectOR/tools" folder-
 
-	A) GeneWise ( e.g. wise2.4.1 - https://www.ebi.ac.uk/~birney/wise2/)
-		- copy the wiseX.X.X folder inside insectOR/tools
-		- change the $wiseconfigdir_path in the bin/scoreGenesOnScaffold.pl accordingly (If the GeneWise package wise2.4.1 is installed at the correct location as given above there is no need to edit $wiseconfigdir_path).
+	A) GeneWise ( e.g. wise2.4.1 - https://www.ebi.ac.uk/~birney/wise2/) 
+	  Copy the wiseX.X.X folder inside insectOR/tools
+	  Change the $wiseconfigdir_path in the bin/scoreGenesOnScaffold.pl accordingly (If the GeneWise package wise2.4.1 is installed at the correct location as given above there is no need to edit $wiseconfigdir_path).
 		
 	B) GFFtools-GX (e.g. GFFtools-GX-master - https://github.com/vipints/GFFtools-GX)
 		- copy the GFFtools-GX-master folder inside insectOR/tools
