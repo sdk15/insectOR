@@ -38,7 +38,7 @@ Please follow these instructions for installing and using this package -
 	IO::Handle
 	Cwd
 ```
-3) Install following packages and keep their respective folders/binaries inside "insectOR/tools" folder-
+3) Install following packages and keep their respective folders/binaries inside ```insectOR/tools``` folder-
 
 	A) GeneWise ( e.g. wise2.4.1 - https://www.ebi.ac.uk/~birney/wise2/) 
 	  
