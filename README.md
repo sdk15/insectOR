@@ -14,7 +14,7 @@ This package is under development.
 
 Operating system requirements:
 ------------------------------
-This package is for use on unix systems.
+This package is made for use on unix systems.
 
 
 Installation:
