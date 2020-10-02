@@ -25,37 +25,53 @@ Please follow these instructions for installing and using this package -
 
 2) Make sure that Perl programming language and the following perl modules are installed -
 	Getopt::Long qw(GetOptions)
+	
 	Tie::IxHash
+	
 	HTML::Template
+	
 	File::Basename
+	
 	File::Spec
+	
 	IO::File
+	
 	GD::Graph::bars
+	
 	GD::Graph::Data
+	
 	IO::Handle
+	
 	Cwd
 
 3) Install following packages and keep their respective folders/binaries inside "insectOR/tools" folder-
+
 	A) GeneWise ( e.g. wise2.4.1 - https://www.ebi.ac.uk/~birney/wise2/)
 		- copy the wiseX.X.X folder inside insectOR/tools
 		- change the $wiseconfigdir_path in the bin/scoreGenesOnScaffold.pl accordingly (If the GeneWise package wise2.4.1 is installed at the correct location as given above there is no need to edit $wiseconfigdir_path).
+		
 	B) GFFtools-GX (e.g. GFFtools-GX-master - https://github.com/vipints/GFFtools-GX)
 		- copy the GFFtools-GX-master folder inside insectOR/tools
+		
 	C) TMHMM2 (e.g. tmhmm-2.0c - https://services.healthtech.dtu.dk/cgi-bin/sw_request) 
 		- mandatory if using option -tmhmm or -tmh1
 		- change the $tmhmmpath in the bin/scoreGenesOnScaffold.pl accordingly (If the TMHMM2 package tmhmm-2.0c is installed at the correct location as given above there is no need to edit $tmhmmpath).
 		- make sure to give executable permission
+		
 	D) HMMTOP2 (e.g. hmmtop_2.1 - http://www.enzim.hu/hmmtop/html/download.html) 
 		- mandatory if using option -hmmtop or -tmh2
 		- change the $hmmtoppath in the bin/scoreGenesOnScaffold.pl accordingly (If the HMMTOP2 package hmmtop_2.1 is installed at the correct location as given above there is no need to edit $hmmtoppath).
 		- make sure to give executable permission
+		
 	E) Phobius (http://phobius.sbc.su.se/data.html)
 		- mandatory if using option -phobius or -tmh3
 		- check of the $phobiupath is set correctly in bin/scoreGenesOnScaffold.pl
 		- make sure to give executable permission
+		
 	F) HMMER (e.g. hmmer-3.1b2 - http://hmmer.org/download.html)
 		- mandatory if using option -hmmsearch or -p
 		- change the $hmmsearchpath in the bin/scoreGenesOnScaffold.pl accordingly (If the hmmerpackage hmmer-3.1b2 is installed at the correct location as given above there is no need to edit $hmmsearchpath).
+		
 	G) MEME (e.g. meme_4.10.2 - http://meme-suite.org/doc/download.html) 
 		- mandatory if using option -mast or -m
 		- change the $mastpath and $mast_xslt_path in the bin/scoreGenesOnScaffold.pl accordingly (If the MEME suit meme_4.10.2 is installed at the correct location as given above there is no need to edit $hmmsearchpath).
