@@ -185,11 +185,11 @@ MAST.xml  - Motif search output file in HTML format
 
 Suggestions and known bugs
 --------------------------
-  Please use simple names for your genome sequences. Issues might occur if longer sequence lengths and special characters including _ or - are part of these names. 
-  The sequence names should match across the Exonerate and the sequence files for genome and protein queries.
-  InsectOR performs several parallel executions (upto 6 threads) of the validation packages near the end of the execution. 
-  Please be warned that this might need computational resources.
-  Run the InsectOr in a folder with just input files and avoid having multiple runs of InsectOr within the same folder.
+* Please use simple names for your genome sequences. Issues might occur if longer sequence lengths and special characters including _ or - are part of these names. 
+* The sequence names should match across the Exonerate and the sequence files for genome and protein queries.
+* InsectOR performs several parallel executions (upto 6 threads) of the validation packages near the end of the execution. 
+* Please be warned that this might need computational resources.
+* Run the InsectOr in a folder with just input files and avoid having multiple runs of InsectOr within the same folder.
 
 Please cite
 -----------
