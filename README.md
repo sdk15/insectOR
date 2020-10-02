@@ -112,7 +112,7 @@ Input
 ```
 -seq|-s            - Genome sequence (FASTA) file which was used to generate above exonerate file 
 ```
-(Sample genome sequence file is provided in the test folder - ```seq.fasta```. Please note that this is *Habropoda laboriosa* genome sequence NCBI Genbank accession GCA_001263275.1_ASM126327v1. It is renamed to seq.fasta for easy understanding.)
+(Sample genome sequence file is provided in the test folder - ```seq.fasta```. Please note that this is *Habropoda laboriosa* genome sequence NCBI Genbank accession GCA_001263275.1_ASM126327v1.)
 ```
 -queryseq|-q       - OR/query sequence (FASTA) file which was used for generating above exonerate alignment 
 ````
@@ -185,17 +185,17 @@ MAST.xml  - Motif search output file in HTML format
 
 Suggestions and known bugs
 --------------------------
-Please use simple names for your genome sequences. Issues might occur if longer sequence lengths and special characters including _ or - are part of these names. 
-The sequence names should match across the Exonerate and the sequence files for genome and protein queries.
-InsectOR performs several parallel executions (upto 6 threads) of the validation packages near the end of the execution. 
-Please be warned that this might need computational resources.
-Run the InsectOr in a folder with just input files and avoid having multiple runs of InsectOr within the same folder.
+  Please use simple names for your genome sequences. Issues might occur if longer sequence lengths and special characters including _ or - are part of these names. 
+  The sequence names should match across the Exonerate and the sequence files for genome and protein queries.
+  InsectOR performs several parallel executions (upto 6 threads) of the validation packages near the end of the execution. 
+  Please be warned that this might need computational resources.
+  Run the InsectOr in a folder with just input files and avoid having multiple runs of InsectOr within the same folder.
 
 Please cite
 -----------
-Karpe SD, Tiwari V & Sowdhamini R. InsectOR - webserver for sensitive identification of insect olfactory receptor genes from non-model genomes. 
-bioRxiv doi: https://doi.org/10.1101/2020.04.29.067470
-Please also cite respective papers for tools used herewith - e.g. GeneWise, GFFtools, TMH prediction methods, 7tm_6 hmmsearch, MAST motif search tool, etc.
+* Karpe SD, Tiwari V & Sowdhamini R. InsectOR - webserver for sensitive identification of insect olfactory receptor genes from non-model genomes. 
+  bioRxiv doi: https://doi.org/10.1101/2020.04.29.067470
+* Please also cite respective papers for tools used herewith - e.g. GeneWise, GFFtools, TMH prediction methods, 7tm_6 hmmsearch, MAST motif search tool, etc.
 
 
 Contact
