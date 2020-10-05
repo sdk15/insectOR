@@ -1,0 +1,15 @@
+#                                                                                                                     --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                                 accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                                         ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent -            394 7tm_6                PF02949.19   313   6.6e-28   84.7  16.1   1   1   8.5e-28   8.5e-28   84.3  16.1     7   313    65   385    60   385 0.86 -
+LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent   -            120 7tm_6                PF02949.19   313   2.5e-16   46.7   2.6   1   1   2.7e-16   2.7e-16   46.6   2.6   189   308     2   120     1   120 0.98 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      /media/snehal/Data1/my_tools/insectOR//hmm/7tm_6.hmm
+# Target file:     exonerate.txt.ORs.starRemoved.pep
+# Option settings: /media/snehal/Data1/my_tools/insectOR//tools/hmmer-3.1b2/src/hmmsearch --domtblout exonerate.txt.ORs.starRemoved.pep.hmmsearchout /media/snehal/Data1/my_tools/insectOR//hmm/7tm_6.hmm exonerate.txt.ORs.starRemoved.pep 
+# Current dir:     /media/snehal/Data1/insectOR/test
+# Date:            Mon Oct  5 14:48:51 2020
+# [ok]

@@ -1,0 +1,5 @@
+Scaffold_name	Cluster_start	Cluster_end	ScoreBestStart	ScoreBestEnd	ScoreBestScore	ScoreBestLength	ScoreBestQstart	ScoreBestQend	ScoreBasedDirection	ScoreBasedQuery	FullEntry
+LHQN01028732.1	1234	2787	1234	2724	282	111	287	398	-	AfOr111	-
+LHQN01028732.1	4225	5976	4225	5684	564	259	129	389	-	AfOr112_1	-
+LHQN01028732.1	6118	6300	6142	6291	121	50	1	50	-	AfOr112_1	-
+LHQN01028732.1	6853	8342	7630	8132	348	119	256	375	-	AmOr113	-

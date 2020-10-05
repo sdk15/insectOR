@@ -1,0 +1,16 @@
+LHQN01028732.1	GWS	gene	1228	6288	.	-	.	ID=gene_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	mRNA	1228	6288	.	-	.	ID=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=gene_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	1228	1275	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	1361	1493	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	4791	4924	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	5017	5107	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	5207	5329	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	5422	5719	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	5799	5889	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	5954	6070	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	exon	6142	6288	.	-	.	ID=exon_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent;Parent=mRNA_LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent
+LHQN01028732.1	GWS	gene	7630	8132	.	-	.	ID=gene_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent
+LHQN01028732.1	GWS	mRNA	7630	8132	.	-	.	ID=mRNA_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent;Parent=gene_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent
+LHQN01028732.1	GWS	exon	7630	7765	.	-	.	ID=exon_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent;Parent=mRNA_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent
+LHQN01028732.1	GWS	exon	7836	7969	.	-	.	ID=exon_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent;Parent=mRNA_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent
+LHQN01028732.1	GWS	exon	8043	8132	.	-	.	ID=exon_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent;Parent=mRNA_LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent

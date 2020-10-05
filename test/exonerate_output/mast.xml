@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!DOCTYPE mast[
+<!ELEMENT mast (model, alphabet, motifs, sequences, runtime)>
+<!ATTLIST mast version CDATA #REQUIRED release CDATA #REQUIRED>
+<!ELEMENT model (command_line, max_correlation, remove_correlated, strand_handling, translate_dna, max_seq_evalue,
+    adj_hit_pvalue, max_hit_pvalue, max_weak_pvalue, host, when)>
+<!ELEMENT command_line (#PCDATA)>
+<!ELEMENT max_correlation (#PCDATA)>
+<!ELEMENT remove_correlated EMPTY>
+<!ATTLIST remove_correlated value (y|n) #REQUIRED>
+<!ELEMENT strand_handling EMPTY>
+<!ATTLIST strand_handling value (combine|separate|norc|protein) #REQUIRED>
+<!ELEMENT translate_dna EMPTY>
+<!ATTLIST translate_dna value (y|n) #REQUIRED>
+<!ELEMENT max_seq_evalue (#PCDATA)>
+<!ELEMENT adj_hit_pvalue EMPTY>
+<!ATTLIST adj_hit_pvalue value (y|n) #REQUIRED>
+<!ELEMENT max_hit_pvalue (#PCDATA)>
+<!ELEMENT max_weak_pvalue (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ELEMENT when (#PCDATA)>
+<!ELEMENT alphabet (letter*)>
+<!ATTLIST alphabet type (amino-acid|nucleotide) #REQUIRED bg_source (preset|file|sequence_composition) #REQUIRED bg_file CDATA #IMPLIED>
+<!ELEMENT letter EMPTY>
+<!ATTLIST letter symbol CDATA #REQUIRED ambig (y|n) "n" bg_value CDATA #IMPLIED>
+<!ELEMENT motifs (motif*,correlation*,nos*)>
+<!ATTLIST motifs source CDATA #REQUIRED name CDATA #REQUIRED last_mod_date CDATA #REQUIRED>
+<!ELEMENT motif EMPTY>
+<!-- num is simply the loading order of the motif, it's superfluous but makes things easier for XSLT -->
+<!ATTLIST motif id ID #REQUIRED num CDATA #REQUIRED name CDATA #REQUIRED width CDATA #REQUIRED
+   best_f CDATA #REQUIRED best_r CDATA #IMPLIED bad (y|n) "n">
+<!-- for n > 1 motifs there should be (n * (n - 1)) / 2 correlations, obviously there are none for only 1 motif -->
+<!ELEMENT correlation EMPTY>
+<!ATTLIST correlation motif_a IDREF #REQUIRED motif_b IDREF #REQUIRED value CDATA #REQUIRED>
+<!-- nos: Nominal Order and Spacing diagram, a rarely used feature where mast can adjust pvalues for an expected motif spacing -->
+<!ELEMENT nos (expect*)>
+<!-- length is in the same unit as the motifs, which is not always the same unit as the sequence -->
+<!ATTLIST nos length CDATA #REQUIRED>
+<!-- the expect tags are expected to be ordered by pos ascending -->
+<!ELEMENT expect EMPTY>
+<!ATTLIST expect pos CDATA #REQUIRED gap CDATA #REQUIRED motif IDREF #REQUIRED>
+<!ELEMENT sequences (database*, sequence*)>
+<!-- the database tags are expected to be ordered in file specification order -->
+<!ELEMENT database EMPTY>
+<!ATTLIST database id ID #REQUIRED num CDATA #REQUIRED source CDATA #REQUIRED name CDATA #REQUIRED last_mod_date CDATA #REQUIRED 
+    seq_count CDATA #REQUIRED residue_count CDATA #REQUIRED type (amino-acid|nucleotide) #REQUIRED link CDATA #IMPLIED>
+<!-- the sequence tags are expected to be ordered by best combined p-value (of contained score tags) ascending -->
+<!ELEMENT sequence (score*,seg*)>
+<!ATTLIST sequence id ID #REQUIRED db IDREF #REQUIRED num CDATA #REQUIRED name CDATA #REQUIRED comment CDATA "" length CDATA #REQUIRED>
+<!ELEMENT score EMPTY>
+<!-- frame is the starting offset for translation of dna sequences which gives the lowest pvalues for the provided protein motifs -->
+<!ATTLIST score strand (both|forward|reverse) #REQUIRED frame (a|b|c) #IMPLIED combined_pvalue CDATA #REQUIRED evalue CDATA #REQUIRED>
+<!-- within each sequence the seg tags are expected to be ordered by start ascending -->
+<!ELEMENT seg (data,hit*)>
+<!ATTLIST seg start CDATA #REQUIRED>
+<!ELEMENT data (#PCDATA)>
+<!-- within each seg the hit tags are expected to be ordered by pos ascending and then forward strand first -->
+<!ELEMENT hit EMPTY>
+<!-- gap, while superfluous, makes creating motif diagrams for the text version much easier when using XSLT -->
+<!ATTLIST hit pos CDATA #REQUIRED gap CDATA #REQUIRED motif IDREF #REQUIRED pvalue CDATA #REQUIRED strand (forward|reverse) "forward" 
+    match CDATA #REQUIRED translation CDATA #IMPLIED>
+<!ELEMENT runtime EMPTY>
+<!ATTLIST runtime cycles CDATA #REQUIRED seconds CDATA #REQUIRED>
+]>
+<mast version="4.10.2" release="Thu Sep 03 15:00:54 2015 -0700">
+	<model>
+		<command_line>mast /media/snehal/Data1/my_tools/insectOR//tools/motifs/AfOr_motifs exonerate.txt.ORs.starRemoved.pep -oc . -nostatus</command_line>
+		<max_correlation>0.60</max_correlation>
+		<remove_correlated value="n"/>
+		<strand_handling value="protein"/>
+		<translate_dna value="n"/>
+		<max_seq_evalue>10</max_seq_evalue>
+		<adj_hit_pvalue value="n"/>
+		<max_hit_pvalue>0.0001</max_hit_pvalue>
+		<max_weak_pvalue>0.0001</max_weak_pvalue>
+		<host>snehal-HP-ZBook-Studio-G5</host>
+		<when>Mon Oct  5 14:48:51 2020</when>
+	</model>
+	<alphabet type="amino-acid" bg_source="preset">
+		<letter symbol="A" bg_value="0.073"/>
+		<letter symbol="C" bg_value="0.018"/>
+		<letter symbol="D" bg_value="0.052"/>
+		<letter symbol="E" bg_value="0.062"/>
+		<letter symbol="F" bg_value="0.040"/>
+		<letter symbol="G" bg_value="0.069"/>
+		<letter symbol="H" bg_value="0.022"/>
+		<letter symbol="I" bg_value="0.056"/>
+		<letter symbol="K" bg_value="0.058"/>
+		<letter symbol="L" bg_value="0.092"/>
+		<letter symbol="M" bg_value="0.023"/>
+		<letter symbol="N" bg_value="0.046"/>
+		<letter symbol="P" bg_value="0.051"/>
+		<letter symbol="Q" bg_value="0.041"/>
+		<letter symbol="R" bg_value="0.052"/>
+		<letter symbol="S" bg_value="0.074"/>
+		<letter symbol="T" bg_value="0.059"/>
+		<letter symbol="V" bg_value="0.064"/>
+		<letter symbol="W" bg_value="0.013"/>
+		<letter symbol="Y" bg_value="0.033"/>
+	</alphabet>
+	<motifs source="/media/snehal/Data1/my_tools/insectOR//tools/motifs/AfOr_motifs" name="/media/snehal/Data1/my_tools/insectOR//tools/motifs/AfOr_motifs" last_mod_date="Mon Jun 19 13:24:49 2017">
+		<motif id="motif_1" num="1" name="AfOr_Motif1" width="21" best_f="KLTAGKFFDMSLETFGDVLKT"/>
+		<motif id="motif_2" num="2" name="AfOr_Motif2" width="21" best_f="FAHHACGQFRILGHWIQHLVD"/>
+		<motif id="motif_3" num="3" name="AfOr_Motif3" width="15" best_f="AYMSDWYRLPPKKQK"/>
+		<motif id="motif_4" num="4" name="AfOr_Motif4" width="21" best_f="IFMYCWPGDYLIDQSENVGNA"/>
+		<motif id="motif_5" num="5" name="AfOr_Motif5" width="15" best_f="RWFLKPVGVWPYQNS"/>
+		<motif id="motif_6" num="6" name="AfOr_Motif6" width="21" best_f="RIKRCVEHHQRAIEFCNRLEH"/>
+		<motif id="motif_7" num="7" name="AfOr_Motif7" width="21" best_f="CIEHMEWDWKQVTREEDRQVM"/>
+		<motif id="motif_8" num="8" name="AfOr_Motif8" width="21" best_f="QPICFMEMFGCTLNICMLGYC"/>
+		<motif id="motif_9" num="9" name="AfOr_Motif9" width="15" best_f="PVQTSPYYEIVFGHQ"/>
+		<motif id="motif_10" num="10" name="AfOr_Motif10" width="11" best_f="SFSYFNVLRQM"/>
+		<correlation motif_a="motif_1" motif_b="motif_2" value="0.30"/>
+		<correlation motif_a="motif_1" motif_b="motif_3" value="0.25"/>
+		<correlation motif_a="motif_2" motif_b="motif_3" value="0.20"/>
+		<correlation motif_a="motif_1" motif_b="motif_4" value="0.25"/>
+		<correlation motif_a="motif_2" motif_b="motif_4" value="0.29"/>
+		<correlation motif_a="motif_3" motif_b="motif_4" value="0.26"/>
+		<correlation motif_a="motif_1" motif_b="motif_5" value="0.26"/>
+		<correlation motif_a="motif_2" motif_b="motif_5" value="0.24"/>
+		<correlation motif_a="motif_3" motif_b="motif_5" value="0.17"/>
+		<correlation motif_a="motif_4" motif_b="motif_5" value="0.24"/>
+		<correlation motif_a="motif_1" motif_b="motif_6" value="0.27"/>
+		<correlation motif_a="motif_2" motif_b="motif_6" value="0.22"/>
+		<correlation motif_a="motif_3" motif_b="motif_6" value="0.22"/>
+		<correlation motif_a="motif_4" motif_b="motif_6" value="0.22"/>
+		<correlation motif_a="motif_5" motif_b="motif_6" value="0.15"/>
+		<correlation motif_a="motif_1" motif_b="motif_7" value="0.11"/>
+		<correlation motif_a="motif_2" motif_b="motif_7" value="0.11"/>
+		<correlation motif_a="motif_3" motif_b="motif_7" value="0.17"/>
+		<correlation motif_a="motif_4" motif_b="motif_7" value="0.16"/>
+		<correlation motif_a="motif_5" motif_b="motif_7" value="0.07"/>
+		<correlation motif_a="motif_6" motif_b="motif_7" value="0.22"/>
+		<correlation motif_a="motif_1" motif_b="motif_8" value="0.28"/>
+		<correlation motif_a="motif_2" motif_b="motif_8" value="0.24"/>
+		<correlation motif_a="motif_3" motif_b="motif_8" value="0.17"/>
+		<correlation motif_a="motif_4" motif_b="motif_8" value="0.23"/>
+		<correlation motif_a="motif_5" motif_b="motif_8" value="0.27"/>
+		<correlation motif_a="motif_6" motif_b="motif_8" value="0.14"/>
+		<correlation motif_a="motif_7" motif_b="motif_8" value="0.16"/>
+		<correlation motif_a="motif_1" motif_b="motif_9" value="0.29"/>
+		<correlation motif_a="motif_2" motif_b="motif_9" value="0.22"/>
+		<correlation motif_a="motif_3" motif_b="motif_9" value="0.14"/>
+		<correlation motif_a="motif_4" motif_b="motif_9" value="0.25"/>
+		<correlation motif_a="motif_5" motif_b="motif_9" value="0.14"/>
+		<correlation motif_a="motif_6" motif_b="motif_9" value="0.20"/>
+		<correlation motif_a="motif_7" motif_b="motif_9" value="0.17"/>
+		<correlation motif_a="motif_8" motif_b="motif_9" value="0.21"/>
+		<correlation motif_a="motif_1" motif_b="motif_10" value="0.35"/>
+		<correlation motif_a="motif_2" motif_b="motif_10" value="0.43"/>
+		<correlation motif_a="motif_3" motif_b="motif_10" value="0.17"/>
+		<correlation motif_a="motif_4" motif_b="motif_10" value="0.25"/>
+		<correlation motif_a="motif_5" motif_b="motif_10" value="0.26"/>
+		<correlation motif_a="motif_6" motif_b="motif_10" value="0.33"/>
+		<correlation motif_a="motif_7" motif_b="motif_10" value="0.19"/>
+		<correlation motif_a="motif_8" motif_b="motif_10" value="0.31"/>
+		<correlation motif_a="motif_9" motif_b="motif_10" value="0.28"/>
+	</motifs>
+	<sequences>
+		<database id="db_1" num="1" source="exonerate.txt.ORs.starRemoved.pep" name="exonerate.txt.ORs.starRemoved.pep" last_mod_date="Mon Oct  5 14:48:51 2020" seq_count="2" residue_count="514" type="amino-acid"/>
+		<sequence id="seq_1_1" db="db_1" num="1" name="LHQN01028732.1_1228-6288_OR_Complete_Normal_StartCodonPresent" comment="" length="394">
+			<score strand="both" combined_pvalue="3.09e-29" evalue="6.2e-29"/>
+			<seg start="1">
+				<data>
+MDAITLEKRYLRINKKLGMLTGVWPYQKSSPKWISRTVVLFVIIPCYVTQYARIVTFPRIHIILNDYPYLITSLG
+				</data>
+				<hit pos="15" gap="14" motif="motif_5" pvalue="2.3e-06" match="+ ++ + ++++++ +"/>
+			</seg>
+			<seg start="76">
+				<data>
+VIIKFGNYFINESELKYLLGKIYEDWRAMTSEDEYKIMTKYAEKERSLSFCFTFEKVHISLCAALFMCLPFVSPI
+				</data>
+				<hit pos="93" gap="63" motif="motif_7" pvalue="1.8e-06" match="    + +++++ + +++ +++"/>
+			</seg>
+			<seg start="151">
+				<data>
+LDILMPLNETRARLFVYPAYYFVDEDKYRYLIVGHMYLVVVMLISVFCACDANYVYAVQHACGLLAIAGYRFKYA
+CYEVIPEDEKEAVKMMKKMYRNVCHSIRIHQRALQYVKEITAAHDTCMFISVGLLMMSISTSLLQISEHEHDAEW
+				</data>
+				<hit pos="207" gap="93" motif="motif_2" pvalue="2.5e-09" match=" ++++++++++++++++ ++ "/>
+				<hit pos="247" gap="19" motif="motif_6" pvalue="6.8e-09" match="   + ++ +++++++++ + +"/>
+			</seg>
+			<seg start="301">
+				<data>
+TLYCTFFTAQLLHMLFLVVQGQFVLDAYDDVYNTIYESQWYNFTPRTQALYVLALRSCLNPPLLTAGGMTTLNLR
+SFAEIIKASVSYYTVMQTK
+				</data>
+				<hit pos="314" gap="46" motif="motif_4" pvalue="1.5e-06" match="++ +   ++ + +  +++ ++"/>
+				<hit pos="335" gap="0" motif="motif_3" pvalue="4.2e-09" match="++++ +++ +++++ "/>
+				<hit pos="363" gap="13" motif="motif_1" pvalue="3.3e-13" match=" ++++++ ++++ ++++++++"/>
+				<hit pos="384" gap="0" motif="motif_10" pvalue="7.2e-07" match="++++ +++++ "/>
+			</seg>
+		</sequence>
+		<sequence id="seq_1_2" db="db_1" num="2" name="LHQN01028732.1_7630-8132_OR_Partial_Normal_StartCodonAbsent" comment="" length="120">
+			<score strand="both" combined_pvalue="5.48e-08" evalue="1.1e-07"/>
+			<seg start="1">
+				<data>
+YITEIEQVHGTYLFIAVGMVMMSFSITLVRVSTMNPCVEFYKYCGFLVVQLVHLLFLSIQGHFVIVSHDTTYDNI
+YSATWYNGTPKVQALYVLALRRNLTPPLITAGGLISLNLETFAEV
+				</data>
+				<hit pos="13" gap="12" motif="motif_1" pvalue="3.1e-05" match="   + +++ ++ +     +++"/>
+				<hit pos="54" gap="20" motif="motif_4" pvalue="1.7e-06" match="++ ++  +  ++ + +   + "/>
+				<hit pos="75" gap="0" motif="motif_3" pvalue="2.6e-09" match="++++++++ +++++ "/>
+			</seg>
+		</sequence>
+	</sequences>
+	<runtime cycles="59184" seconds="0.059"/>
+</mast>

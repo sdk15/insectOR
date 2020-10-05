@@ -1,0 +1,20 @@
+Total number of genes: 2
+Total number of genes overlapping with user-provided genes: 1
+Total number of genes non-overlapping with user-provided genes: 1
+Total number of Complete genes: 1
+Total number of Partial genes: 1
+Total number of Normal genes: 2
+Total number of Pseudo genes: 0
+Total number of genes with start codon present: 1
+Total number of genes without start codon: 1
+Total number of genes with 7tm_6 domain: 2
+Total number of genes without 7tm_6: 0
+
+**********************************Within 7tm_6 containg hits*********************************
+Total number of Complete genes: 1
+Total number of Partial genes: 1
+Total number of Normal genes: 2
+Total number of Pseudo genes: 0
+Total number of genes with start codon present: 1
+Total number of without start codon: 1
+
