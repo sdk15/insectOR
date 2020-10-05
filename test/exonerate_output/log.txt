@@ -1,0 +1,89 @@
+Degenerate characters like R,Y,W,S,M,K,B,H,D,V were replaced with N in the genomic DNA sequence.
+
+Processing alignment file...
+
+Alignment file processed.
+
+Initializing each DNA scaffold vector with score 0 for each nucleotide position...
+
+Incrementing scaffold vector by score 1 for each alignment at respective nucleotide position...
+
+Choosing best queries for each alignment cluster...
+
+Scoring of nucleotide positions finished.
+
+Retrieving all alignments for the best query and scaffold pair...
+
+Stitching the alignments with overlapping query region in the correct direction...
+
+Stitching finished.
+
+Retaining best hits only...
+
+Best hits decided.
+
+*********************************************************************************************************
+Core algorithm to find out best possible OR gene regions from the genome is over.
+*********************************************************************************************************
+
+GeneWise gene prediction will be performed next...
+
+Running GeneWise for hit refinement. It may take a while...
+
+>AfOr111
+MINYRLLNMDKRIIEDQYLKINKFFGQLVGVWPYQQRFTKFCIRFITSVIVVLTLAAQISRVIMFYSIDVLSDQLPYLDVGFVLLFKQYNYILNEDKLRELLNEIISDRLIKRSKEELEILEMYLKRAKVLSTVYEVSIFFCGFMFLLIPSIPPILNIISPLNVSRGRELIYPSYYFVDEEKYYYPILMHMIAVALILTSVYVACDTYLVYIVHHGCALLAISGYRFKHAVDDIKLCGEDYIDSLMDETYTKVRQSIKAHKTAVEYVDKIDACHIHYFLLIIGMIVLAFTGTFVKLSSMEVNVRFFTFCAFTVGQLTHLFFLTIMGQFLINANDEIFKTVYEAYWYNGSSRTQSLYILVLRKCLSPPKLTGGGLVALNLDSFLQILKASFSYYTVFRS
+>AfOr112_1
+MDARTVEKNFLKVNKIFGLITGVWPYQNYRMKMAERFLSVTVMMSGFVTQFAYLVLNPTIDKAATNLPYSIASFGTFVKMGNYFLDETKLITILNHIFEDWAAIKTKEEYEIMYKYSRRGLFITISYFLHIGITETFMLMWPMVPPILDIIMPLNVSRKRILLYPAYFWLDDEKYYVLLLGHMIITILMICFIFCACDMNYVYAVQHACGLLAIAKYRFKNVCKDLNDKEDHAMPLEKIKYKSICESIKAHQHALKYLRLIENSYHTYLFVSMGLLIMAISVSLLEVANGKNGSRKLVQATFLFAQLFHTFILTVQGQFVINELQDVYESIYESPWYTFSPRIRSLYVLSLRSCLNFPILTAGGLIVLNLQSFAEIIKAAVSYYTVMQTT
+>AmOr113
+MDSDILEKRFLKITKRFAKLSGIWPDQNKYLKYISWIIIYVISIPSIVVQIARIVHISTANVIVEQSGIATAIFLSLLKEANYILNATKVKSLFNDMYMDWRMDRPKKEFEIMSTYAQRGSFLAMFYFINAYCCSLLFLQVPWTARLLYMIKSQNTSPPMLYVIPGYYFVDDDRDYYYFIQLHMSLSIIMVANVYVAYDTCYMVFVQHVCGLLAVAGYRFKHAIDDSASKNSEEKIKETCKKIRSSIQGHEGAIRYLKKIEDTHVNLLFISLGLIIMCFSITLLKVVTMDYCLDFYKYSSFLIVQLMHLCYVMIQGQFVIDSCNEIYYSIYEASWYNINPKIQALYILALRRSLTPPRLTAGGLIELNMQSFSEVIKLSISYYTVLRST
+Genewise run complete : 4
+Putative protein sequences for pseudogenes contain '*' in place of pseudogenizing elements
+like stop codons and frame-shifts. These were removed for further analysis.
+
+Searching for 7tm_6 domain...
+
+Searching for motifs...
+
+TMHMM search started...
+
+HMMTOP search started...
+
+Phobius search started...
+
+
+
+HMMTOP 2.1, Copyright (C) 2000, Gabor E. Tusnady
+
+HMMTOP info: No input file format, using fasta format
+HMMTOP info: No process mode, using spred
+HMMTOP info: No iteration start point. Start from pseudo vector
+7tm_6 domain search finished.
+
+Phobius ver 1.01
+(c) 2004 Lukas Kall, Anders Krogh, Erik Sonnhammer
+
+HMMTOP search finished.
+
+Motif search finished.
+
+TMHMM search finished.
+
+Use of uninitialized value $predstr in concatenation (.) or string at /media/snehal/Data1/my_tools/insectOR//tools/phobius/phobius.pl line 248, <SOUT> line 28.
+Use of uninitialized value $predstr in concatenation (.) or string at /media/snehal/Data1/my_tools/insectOR//tools/phobius/phobius.pl line 248, <SOUT> line 39.
+Phobius search finished.
+
+Consensus TMH search started...
+
+Consensus TMH search finished.
+
+Comparing with user-provided gff file...
+
+Comparison with user-provided gff completed.
+
+
+
+Additional user-selected analyses over.
+
+Pipeline completed.
+
+Cleaning up.
