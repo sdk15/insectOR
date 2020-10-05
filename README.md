@@ -112,7 +112,7 @@ Input
 ```
 -seq|-s            - Genome sequence (FASTA) file which was used to generate above exonerate file 
 ```
-(Sample genome sequence file is provided in the test folder - ```seq.fasta```. Please note that this is *Habropoda laboriosa* genome sequence NCBI Genbank accession GCA_001263275.1_ASM126327v1.)
+(Sample genome sequence file is provided in the test folder - ```seq.fasta```. Please note that this is a *Habropoda laboriosa* genome scaffold sequence NCBI Genbank accession LHQN01028732.1.)
 ```
 -queryseq|-q       - OR/query sequence (FASTA) file which was used for generating above exonerate alignment 
 ````
@@ -123,7 +123,7 @@ Input
 -gff_file|-g       - User provided gene annotations (GFF format) with which InsectOR output will be compared 
 ```
 
-(Sample genome sequence file is provided in the test folder - ```ncbi.gff```. Please note that this is *Habropoda laboriosa* gene annotation file in GFF format for NCBI Genbank sequence GCA_001263275.1.)
+(Sample genome sequence file is provided in the test folder - ```ncbi.gff```. Please note that this is a *Habropoda laboriosa* scaffold gene annotation file in GFF format for NCBI Genbank sequence LHQN01028732.1.)
 
 ```
 -cutoff|-c         - Alignment clusters are identified based on this cutoff. 
