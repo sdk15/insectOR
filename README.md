@@ -21,7 +21,7 @@ Installation:
 -------------
 Please follow these instructions for installing and using this package -
 
-1) Extract the contents of this folder -
+1) Extract the contents of this folder.
 
 2) Make sure that Perl programming language and the following perl modules are installed -
 ```	
@@ -36,7 +36,7 @@ Please follow these instructions for installing and using this package -
 	IO::Handle
 	Cwd
 ```
-3) Install following packages and keep their respective folders/binaries inside ```insectOR/tools``` folder-
+3) Install following packages and keep their respective folders/binaries inside ```insectOR/tools``` or ```insectOR-main/tools```folder-
 
 	A) GeneWise ( e.g. wise2.4.1 - https://www.ebi.ac.uk/~birney/wise2/) 
 	  
