@@ -21,8 +21,7 @@ Installation:
 -------------
 Please follow these instructions for installing and using this package -
 
-1) Extract the contentc of this folder -
-	tar -zxvf insectOR.tar.gz
+1) Extract the contents of this folder.
 
 2) Make sure that Perl programming language and the following perl modules are installed -
 	Getopt::Long qw(GetOptions)
@@ -36,7 +35,7 @@ Please follow these instructions for installing and using this package -
 	IO::Handle
 	Cwd
 
-3) Install following packages and keep their respective folders/binaries inside "insectOR/tools" folder-
+3) Install following packages and keep their respective folders/binaries inside "insectOR/tools" or "insectOR-main/tools" folder-
 	A) GeneWise ( e.g. wise2.4.1 - https://www.ebi.ac.uk/~birney/wise2/)
 		- copy the wiseX.X.X folder inside insectOR/tools
 		- change the $wiseconfigdir_path in the bin/scoreGenesOnScaffold.pl accordingly (If the GeneWise package wise2.4.1 is installed at the correct location as given 
@@ -154,7 +153,7 @@ Please use simple names for your genome sequences. Issues might happen if longer
 The sequence names should match across the Exonerate and the sequence files for genome and protein queries.
 InsectOR performs several parallel executions (upto 6 threads) of the validation packages near the end of the execution. 
 Please be warned that this might need computational resources.
-Run the InsectOr in a folder with just input files and avoid having multiple runs of InsectOr within the same folder.
+Run the InsectOR in a folder with just input files and avoid having multiple runs of InsectOR within the same folder.
 
 Please cite
 -----------
