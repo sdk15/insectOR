@@ -21,10 +21,8 @@ Installation:
 -------------
 Please follow these instructions for installing and using this package -
 
-1) Extract the contentc of this folder -
-```	
-	tar -zxvf insectOR.tar.gz
-```
+1) Extract the contents of this folder -
+
 2) Make sure that Perl programming language and the following perl modules are installed -
 ```	
 	Getopt::Long qw(GetOptions)	
