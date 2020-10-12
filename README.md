@@ -187,7 +187,7 @@ Suggestions and known bugs
 * The sequence names should match across the Exonerate and the sequence files for genome and protein queries.
 * InsectOR performs several parallel executions (upto 6 threads) of the validation packages near the end of the execution. 
 * Please be warned that this might need computational resources.
-* Run the InsectOr in a folder with just input files and avoid having multiple runs of InsectOr within the same folder.
+* Run the InsectOR in a folder with just input files and avoid having multiple runs of InsectOR within the same folder.
 
 Please cite
 -----------
