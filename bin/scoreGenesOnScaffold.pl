@@ -26,8 +26,9 @@ my $accid= basename($dir);
 ##### INSECTOR tools path assignment ##################################################################################################################################################
 ##### Please provide correct $basepath as per the location of insectOR on your system #################################################################################################
 #######################################################################################################################################################################################
-
-my $basepath="/media/snehal/Data1/my_tools/insectOR/";
+###
+my $basepath="/path/to/insectOR/insectOR-main/";
+###
 my $wiseconfigdir_path="$basepath/tools/wise2.4.1/wisecfg/";
 my $hmmsearchpath="$basepath/tools/hmmer-3.1b2/src";
 my $tmhmmpath="$basepath/tools/tmhmm-2.0c/bin";
