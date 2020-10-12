@@ -121,7 +121,7 @@ Input
 -gff_file|-g       - User provided gene annotations (GFF format) with which InsectOR output will be compared 
 ```
 
-(Sample genome sequence file is provided in the test folder - ```ncbi.gff```. Please note that this is a *Habropoda laboriosa* scaffold gene annotation file in GFF format for NCBI Genbank sequence LHQN01028732.1.)
+(Sample genome annotation file is provided in the test folder - ```ncbi.gff```. Please note that this is a *Habropoda laboriosa* scaffold gene annotation file in GFF format for NCBI Genbank sequence LHQN01028732.1.)
 
 ```
 -cutoff|-c         - Alignment clusters are identified based on this cutoff. 
