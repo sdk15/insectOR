@@ -218,9 +218,9 @@ sub joinAlignments{
     	#$i=$prevPos+$i;
         #print "***$i***\n";
     	my $overlapLength=$i-2;
-        if($newOverlap=~/^.{$overlapLength,$overlapLength}AG(.*)$/i)
+        if($newOverlap=~/^.({$overlapLength,$overlapLength})AG(.*)$/i)
     	{
-        	my $ag=$1;
+        	my $ag=$2;
             my $sim=substr($prevOverlapSimilarity,0,$i).substr($newOverlapSimilarity,0-length($ag));
 	        ($prevscore, $newscore)=processSimilarity(substr($prevOverlapSimilarity,0,$i),substr($newOverlapSimilarity,0-length($ag)));
         	$prevscore+=5;
