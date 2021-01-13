@@ -47,7 +47,7 @@ Please follow these instructions for installing and using this package -
 		
 	  - copy the ```GFFtools-GX-master``` folder inside ```insectOR/tools```
 		
-	C) TMHMM2 (e.g. tmhmm-2.0c - https://services.healthtech.dtu.dk/cgi-bin/sw_request) 
+	C) TMHMM2 (e.g. tmhmm-2.0c - https://services.healthtech.dtu.dk/software.php) 
 		
 	  - mandatory if using option ```-tmhmm``` or ```-tmh1```
 	  - change the ```$tmhmmpath``` in the ```bin/scoreGenesOnScaffold.pl``` accordingly (If the TMHMM2 package tmhmm-2.0c is installed at the correct location as given above there is no need to edit ```$tmhmmpath```).
