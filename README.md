@@ -191,8 +191,7 @@ Suggestions and known bugs
 
 Please cite
 -----------
-* Karpe SD, Tiwari V & Sowdhamini R. InsectOR - webserver for sensitive identification of insect olfactory receptor genes from non-model genomes. 
-  bioRxiv doi: https://doi.org/10.1101/2020.04.29.067470
+* Karpe SD, Tiwari V, Ramanathan S (2021) InsectOR—Webserver for sensitive identification of insect olfactory receptor genes from non-model genomes. PLoS ONE 16(1): e0245324. https://doi.org/10.1371/journal.pone.0245324 (Updated from : Karpe SD, Tiwari V & Sowdhamini R. InsectOR - webserver for sensitive identification of insect olfactory receptor genes from non-model genomes. bioRxiv doi: https://doi.org/10.1101/2020.04.29.067470)
 * Please also cite respective papers for tools used herewith - e.g. GeneWise, GFFtools, TMH prediction methods, 7tm_6 hmmsearch, MAST motif search tool, etc.
 
 
