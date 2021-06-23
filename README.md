@@ -14,16 +14,16 @@ This package is under development.
 
 Operating system requirements:
 ------------------------------
-This package is made for use on unix systems and requires python2.7.
+This package is made for use on unix systems and requires python2.7 and Perl.
 
 
 Installation:
 -------------
 Please follow these instructions for installing and using this package -
 
-1) Extract the contents of this folder.
+1) Extract the contents of this folder and ensure that all the files in the folder have executable permissions.
 
-2) Make sure that Perl programming language (tested on v5.26.1) and the following perl modules are installed -
+2) Make sure that Perl (tested on v5.26.1) and Python (tested on 2.7) are installed. Make sure that the following perl modules are installed -
 ```	
 	Getopt::Long qw(GetOptions)	
 	Tie::IxHash
