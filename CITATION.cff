@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Karpe"
+  given-names: "Snehal Dilip"
+  orcid: "https://orcid.org/0000-0001-6062-7786"
+- family-names: "Tiwari"
+  given-names: "Vikas"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "insectOR"
+version: 1.0.0
+doi: 
+date-released: 
+url: "https://github.com/sdk15/insectOR"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Karpe"
+    given-names: "Snehal Dilip"
+    orcid: "https://orcid.org/0000-0001-6062-7786"
+  - family-names: "Tiwari"
+    given-names: "Vikas"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Ramanathan"
+    given-names: "Sowdhamini"
+    orcid: "https://orcid.org/0000-0002-6642-2367"
+  doi: "10.1371/journal.pone.0245324"
+  journal: "PLoS ONE"
+  month: 1
+  start: e0245324 # First page number
+  end:  # Last page number
+  title: "My awesome research software"
+  issue: 1
+  volume: 16
+  year: 2021
