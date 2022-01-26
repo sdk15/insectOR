@@ -29,7 +29,7 @@ preferred-citation:
   month: 1
   start: e0245324 # First page number
   end:  # Last page number
-  title: "My awesome research software"
+  title: "InsectOR—Webserver for sensitive identification of insect olfactory receptor genes from non-model genomes"
   issue: 1
   volume: 16
   year: 2021
